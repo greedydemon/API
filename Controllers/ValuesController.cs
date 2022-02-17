@@ -1,4 +1,5 @@
-﻿using System;
+﻿using API.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -12,6 +13,8 @@ namespace API.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            DBUtils dBUtils = new DBUtils();
+
             return new string[] { "value1", "value2" };
         }
 
